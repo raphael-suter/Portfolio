@@ -9,10 +9,10 @@
     <title>John Doe | UI/UX Designer & Photographer</title>
 </head>
 <body>
-<header id="header-home">
+<header>
     <div class="container">
-        <nav id="main-nav">
-            <img src="../img/logo.png" alt="My Portfolio" id="logo">
+        <nav class="nav">
+            <img src="../img/logo.png" alt="My Portfolio" class="logo">
             <ul>
                 <li><a href="index.html" class="current">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -20,14 +20,15 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="header-content">
+        <div class="content">
             <h1>I Am John The Photographer</h1>
             <p class="lead">I specialize in graphic design, UI/UX and photography</p>
             <a href="work.html" class="btn-main">View My Work</a>
         </div>
+        <i class="material-icons">keyboard_arrow_down</i>
     </div>
 </header>
-<section id="home-a" class="text-center">
+<section class="cards text-center">
     <div class="container">
         <h2 class="section-title">I specialize In</h2>
         <div class="specials">
@@ -55,8 +56,8 @@
         </div>
     </div>
 </section>
-<section id="home-b" class="text-center">
-    <div class="stats">
+<section class="stats text-center">
+    <div>
         <ul>
             <li><i class="material-icons">group</i></li>
             <li class="stats-title">Clients</li>
@@ -79,14 +80,14 @@
         </ul>
     </div>
 </section>
-<section id="home-c" class="text-center py-4">
+<section class="process text-center py-4">
     <div class="container">
         <h2 class="section-title">My Creative Process</h2>
-        <div class="process">
+        <div class="process-step">
             <div>
                 <div class="process-icon">
                     <i class="material-icons">chat</i>
-                    <div class="process-step">1</div>
+                    <div class="process-number">1</div>
                 </div>
                 <h3>Discuss The Project</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna at libero dapibus venenatis.
@@ -95,7 +96,7 @@
             <div>
                 <div class="process-icon">
                     <i class="material-icons">sync</i>
-                    <div class="process-step">2</div>
+                    <div class="process-number">2</div>
                 </div>
                 <h3>Brainstorming</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna at libero dapibus venenatis.
@@ -104,7 +105,7 @@
             <div>
                 <div class="process-icon">
                     <i class="material-icons">square_foot</i>
-                    <div class="process-step">3</div>
+                    <div class="process-number">3</div>
                 </div>
                 <h3>UI/UX Planning</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna at libero dapibus venenatis.
@@ -113,7 +114,7 @@
             <div>
                 <div class="process-icon">
                     <i class="material-icons">emoji_people</i>
-                    <div class="process-step">4</div>
+                    <div class="process-number">4</div>
                 </div>
                 <h3>Interaction</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non magna at libero dapibus venenatis.
@@ -122,5 +123,10 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <p>Copyright &copy; 2019. All Rights Reserved</p>
+    </div>
+</footer>
 </body>
 </html>
