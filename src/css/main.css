@@ -107,6 +107,7 @@ img {
 .logo {
   width: 70px;
   height: 70px;
+  margin-left: 1rem;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -141,21 +142,21 @@ header {
   color: #ffffff;
 }
 header .container {
+  max-width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 header .container i {
   margin: auto;
+  height: 70px;
   font-size: 60px;
   color: #ffbc00;
-}
-header .container i:hover {
-  margin-top: -10px;
-  font-size: 70px;
+  animation: jump 2s infinite;
 }
 header .content {
   flex: 1;
+  margin-left: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -199,7 +200,7 @@ header .content h1 {
 }
 .stats div ul {
   flex: 1;
-  min-width: 200px;
+  min-width: 100px;
   padding: 4rem 1rem 2.5rem;
 }
 .stats div ul li {
@@ -259,7 +260,7 @@ header .content h1 {
 }
 
 footer {
-  padding: 2rem 1.5rem;
+  padding: 2rem 3rem;
   background-color: #ffbc00;
 }
 
@@ -276,6 +277,7 @@ footer {
 }
 @media (max-width: 500px) {
   .logo {
+    margin-left: 0;
     margin-top: 10px;
   }
 
@@ -294,6 +296,20 @@ footer {
   }
   header .content {
     visibility: hidden;
+  }
+}
+@keyframes jump {
+  0% {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  30% {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  100% {
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 }
 
