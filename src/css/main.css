@@ -275,6 +275,11 @@ footer {
     padding-top: 1.5rem;
   }
 }
+@media (max-width: 620px) {
+  .stats div {
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .logo {
     margin-left: 0;
